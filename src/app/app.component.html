@@ -1,0 +1,36 @@
+<div class="container">
+
+  <p>Hola mundo</p>
+  
+  <div>
+    <h1>IDGS902</h1>
+    <h3>{{ title }} </h3>
+  </div>
+  
+  <div>La suma de 2 + 2 es: {{ duplicaN(2) }}</div>
+  <hr>
+  <div>
+    <div>
+      <b>Nombre: </b>{{ alumno.nombre }}<i class="fa-solid fa-house"></i>
+    </div>
+    <div>
+      <b>Apellido paterno: </b>{{ alumno.apaterno|uppercase }}
+    </div>
+    <div>
+      <b>Matricula: </b>{{ alumno.matricula }}
+    </div>
+    <div>
+      <b>Inscrito: </b>{{ alumno.inscrito?'Si':'No' }}
+    </div>
+    <div>
+      <b>Fecha de nacimiento: </b>{{ alumno.fechaNacimiento|date:'dd/MM/yyyy' }}
+    </div>
+    <div>
+      <b>Deuda: </b>{{ alumno.deuda|currency }}
+    </div>
+  </div>
+  <hr>
+  <app-grupos></app-grupos>
+  <hr>
+  <app-idgs></app-idgs>
+</div>

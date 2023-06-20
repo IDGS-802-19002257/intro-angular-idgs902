@@ -2,33 +2,30 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NamesGrupos } from './utl/grupos.component';
-import { IdgsComponent } from './utl/idgs/idgs.component';
-import { IricComponent } from './utl/iric/iric.component';
-import { MenuComponent } from './utl/menu/menu.component';
+import { EjerciciosModule } from './ejercicios/ejercicios.module';
 import { FormsModule } from '@angular/forms';
-import { SumaComponent } from './utl/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { OperasBasComponent } from './utl/formularios/operas-bas/operas-bas.component';
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatRadioModule } from '@angular/material/radio';
+import { MenuComponent } from './utl/menu/menu.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NamesGrupos,
-    IdgsComponent,
-    IricComponent,
-    MenuComponent,
-    SumaComponent,
-    OperasBasComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    MatInputModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        MenuComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        MatInputModule,
+        MatButtonModule,
+        MatRadioModule,
+
+        EjerciciosModule,
+    ]
 })
 export class AppModule { }

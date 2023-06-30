@@ -20,7 +20,7 @@ import { Component } from "@angular/core";
     `
     /* templateUrl: './grupos.component.html', */
 })
-export class NamesGrupos{
+export class GruposComponent{
     constructor(){
 
     }
